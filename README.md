@@ -1,5 +1,5 @@
-# IFC.JSON
-This repository contains the specification for IFC.JSON - version +++
+# IFC.JSON 2.0
+This repository contains the specification for IFC.JSON - version 2.0 aiming for usability and readability.
 
 ## What
 JSON is used throughout the world for exchanging and using data. Building data needs to be available in JSON. Therefore, IFC needs to be available in JSON format. 
