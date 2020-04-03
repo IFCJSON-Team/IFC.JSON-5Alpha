@@ -2,25 +2,24 @@
 This is the overall specification for IFC.JSON2.0.
 
 ## Table of Contents
-1. Overview
-	1.1 Objectives
-	1.2 Development strategy
-2. ifcJSON Document Specification
-	2.1 No required objects, keys, or entities
-	2.2 No empty values, no 'userdefined' values, no 'notdefined' values
-	2.3 IFC prefix
-	2.4 Header
-	2.5 Elements
-	2.6 Identifiers
-	2.7 IfcOwnerHistory
-	2.8 Tree Structure
-	2.9 camelCase, CamelCaps, or snake_case
-	2.10 PredefinedTypes and ObjectTypes and Classes
-	2.11 Geometry
-	2.12 Attributes, Properties and Property Sets
-3. ifcJSON Schema
-4. More information
-
+  * [1. Overview](#1-overview)
+    + [1.1 Objectives](#11-objectives)
+    + [1.2 Development strategy](#12-development-strategy)
+  * [2. ifcJSON Document Specification](#2-ifcjson-document-specification)
+    + [2.1 No required objects, keys, or entities](#21-no-required-objects--keys--or-entities)
+    + [2.2 No empty values, no 'userdefined' values, no 'notdefined' values](#22-no-empty-values--no--userdefined--values--no--notdefined--values)
+    + [2.3 IFC prefix](#23-ifc-prefix)
+    + [2.4 Header](#24-header)
+    + [2.5 Elements](#25-elements)
+    + [2.6 Identifiers](#26-identifiers)
+    + [2.7 IfcOwnerHistory](#27-ifcownerhistory)
+    + [2.8 Tree Structure](#28-tree-structure)
+    + [2.9 camelCase, CamelCaps, or snake_case](#29-camelcase--camelcaps--or-snake-case)
+    + [2.10 PredefinedTypes and ObjectTypes and Classes](#210-predefinedtypes-and-objecttypes-and-classes)
+    + [2.11 Geometry](#211-geometry)
+    + [2.12 Attributes, Properties and Property Sets](#212-attributes--properties-and-property-sets)
+  * [3. ifcJSON Schema](#3-ifcjson-schema)
+  * [4. More information](#4-more-information)
 
 ## 1. Overview
 
