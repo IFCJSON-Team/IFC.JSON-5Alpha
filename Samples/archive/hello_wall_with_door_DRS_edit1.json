@@ -1,0 +1,60 @@
+[
+    {
+        "Class": "Building",
+        "GlobalId": "f3b41796-63ea-4a63-b0aa-f1d7978a6e47",
+        "Name": "'Vertigo Building'",
+        "Description": "'TU/e Department of the Built Environment'",
+        "Elements": [
+            {
+                "Class": "Wall",
+                "GlobalId": "f3b7a52f-4eb5-44a8-80e0-87592507aed9",
+                "Name": "Wall_1",
+                "Material": {
+                    "ref": "f3b41796-b0aa-63ea-4a63-f1d8a6e47797"
+                },
+                "Elements": [
+                    {
+                        "Class": "Door",
+                        "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
+                        "Name": "Door_1.1",
+                        "OverallHeight": 3,
+                        "OverallWidth": 1
+                    }
+                ],
+                "Representations": [
+                    {
+                        "OBJ": "v -3.00 1.800 0.00..."
+                    },
+                    {
+                        "GLTF": {
+                            "link": {
+                                "href": "https://..."
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Class": "MaterialLayerSetUsage",
+        "GlobalId": "f3b41796-b0aa-63ea-4a63-f1d8a6e47797",
+        "ForLayerSet": {
+            "Class": "MaterialLayerSet",
+            "MaterialLayers": [
+                {
+                    "Class": "MaterialLayer",
+                    "Material": {
+                        "Class": "Material",
+                        "Name": "simple brick material"
+                    },
+                    "LayerThickness": 0.3
+                }
+            ],
+            "LayerSetName": "The simple brick material layer set"
+        },
+        "LayerSetDirection": ".AXIS2.",
+        "DirectionSense": ".POSITIVE.",
+        "OffsetFromReferenceLine": -0.15
+    }
+]

@@ -1,0 +1,2003 @@
+[
+
+    {
+      "Class": "Project",
+      "GlobalId": "cb78a8c2-fb1e-4e12-8f29-6c0d7c39ca0b",
+      "Name": "Default Project",
+      "Description": "Description of Default Project",
+      "isDecomposedBy": [
+        {
+          "Class": "Site",
+          "GlobalId": "f07e69ce-3709-4ef5-a029-e27de7e95991",
+          "Name": "'TU/e campus'",
+          "Description": "'The High Tech campus of the Eindhoven University of Technology'",
+          "CompositionType": ".ELEMENT.",
+          "RefElevation": 0,
+          "isDecomposedBy": [
+            {
+              "Class": "Building",
+              "GlobalId": "f3b41796-63ea-4a63-b0aa-f1d7978a6e47",
+              "Name": "'Vertigo Building'",
+              "Description": "'TU/e Department of the Built Environment'",
+              "CompositionType": ".ELEMENT.",
+              "ElevationOfRefHeight": 0,
+              "ElevationOfTerrain": 0,
+              "isDecomposedBy": [
+                {
+                  "Class": "BuildingStorey",
+                  "GlobalId": "f3b837ed-c73a-422c-80f1-621164f4d99f",
+                  "Name": "'Default Building Storey'",
+                  "Description": "'Description of Default Building Storey'",
+                  "CompositionType": ".ELEMENT.",
+                  "Elevation": 0,
+                  "ContainsElements": [
+                    {
+                      "Class": "Door",
+                      "ref": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff"
+                    },
+                    {
+                      "Class": "WallStandardCase",
+                      "ref": "f3b7a52f-4eb5-44a8-80e0-87592507aed9"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Class": "Door",
+      "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
+      "Name": "'A common door'",
+      "Description": "'Description of a standard door'",
+      "Representation": {
+        "Class": "ProductDefinitionShape",
+        "Representations": [
+            {
+                "Class": "ShapeRepresentation",
+                "ref": "dc12a77c-c560-45e3-af0f-e84f5afbe844"
+            },
+            {
+                "Class": "ShapeRepresentation",
+                "ref": "29820bc5-4ddb-4ce4-a65a-e9c936997256"
+            }
+        ]
+      },
+      "FillsVoid": {
+        "Class": "OpeningElement",
+        "ref": "48cdbc79-13a6-4cb3-a02f-28e4978affd2"
+      },
+      "OverallHeight": 0,
+      "OverallWidth": 0
+    },
+    {
+      "Class": "WallStandardCase",
+      "GlobalId": "f3b7a52f-4eb5-44a8-80e0-87592507aed9",
+      "Name": "'Wall xyz'",
+      "Description": "'Description of Wall'",
+      "Representation": {
+        "Class": "ProductDefinitionShape",
+        "Representations": [
+          {
+            "Class": "ShapeRepresentation",
+            "ref": "9b76f770-b9ea-4c50-ae00-97b5105644d5"
+          },
+          {
+             "Class": "ShapeRepresentation",
+             "ref": "a296a747-eba3-4a96-b20c-ced6dbb0092d"
+          },
+          {
+             "Class": "ShapeRepresentation",
+             "ref": "70a00a01-12ba-44e9-b77e-b990fe550b2f"
+          }
+        ]
+      },
+      "HasOpenings": [
+        {
+          "Class": "OpeningElement",
+          "ref": "48cdbc79-13a6-4cb3-a02f-28e4978affd2"
+        }
+      ],
+      "HasAssociations": [
+        {
+          "Class": "MaterialLayerSetUsage",
+          "ForLayerSet": {
+            "Class": "MaterialLayerSet",
+            "MaterialLayers": [
+              {
+                "Class": "MaterialLayer",
+                "Material": {
+                  "Class": "Material",
+                  "Name": "simple brick material"
+                },
+                "LayerThickness": 0.3
+              }
+            ],
+            "LayerSetName": "The simple brick material layer set"
+          },
+          "LayerSetDirection": ".AXIS2.",
+          "DirectionSense": ".POSITIVE.",
+          "OffsetFromReferenceLine": -0.15
+        }
+      ],
+      "Reference": "",
+      "AcousticRating": "",
+      "FireRating": "",
+      "Combustible": false,
+      "SurfaceSpreadOfFlame": "",
+      "ThermalTransmittance": 0.24,
+      "IsExternal": true,
+      "ExtendToStructure": false,
+      "LoadBearing": false,
+      "Compartmentation": false
+    },
+    {
+      "Class": "OpeningElement",
+      "GlobalId": "48cdbc79-13a6-4cb3-a02f-28e4978affd2",
+      "Name": "Opening Element xyz",
+      "Description": "Description of Opening",
+      "Representation": {
+        "Class": "ProductDefinitionShape",
+        "Representations": [
+          {
+            "Class": "ShapeRepresentation",
+            "ref": "6b5db8ee-9ce5-442a-b50e-7be913f9a214"
+          }
+        ]
+      }
+    },
+    {
+       "Class": "ShapeRepresentation",
+       "GlobalId": "dc12a77c-c560-45e3-af0f-e84f5afbe844",
+       "RepresentationIdentifier": "Body",
+       "RepresentationType": "Brep",
+       "Items": [
+          {
+             "Class": "FacetedBrep",
+             "Outer": {
+                "Class": "ClosedShell",
+                "CfsFaces": [
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        0.00004768371586472142
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        99.99999925494195,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        200.0000007450581,
+                                        2099.999952316284
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   }
+                ]
+             }
+          }
+       ]
+    },
+    {
+       "Class": "ShapeRepresentation",
+       "GlobalId": "9b76f770-b9ea-4c50-ae00-97b5105644d5",
+       "RepresentationIdentifier": "Body",
+       "RepresentationType": "Brep",
+       "Items": [
+          {
+             "Class": "FacetedBrep",
+             "Outer": {
+                "Class": "ClosedShell",
+                "CfsFaces": [
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        0.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        1250.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        300.0000059604645,
+                                        2099.999988079071
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        500.0,
+                                        -0.000005960464483090178,
+                                        2099.999988079071
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   },
+                   {
+                      "Class": "Face",
+                      "Bounds": [
+                         {
+                            "Class": "FaceOuterBound",
+                            "Bound": {
+                               "Class": "PolyLoop",
+                               "Polygon": [
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        2299.9999761581416
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        -0.000005960464483090178,
+                                        0.000023841857821338408
+                                     ]
+                                  },
+                                  {
+                                     "Class": "CartesianPoint",
+                                     "Coordinates": [
+                                        5000.0,
+                                        300.0000059604645,
+                                        0.000023841857821338408
+                                     ]
+                                  }
+                               ]
+                            },
+                            "Orientation": true
+                         }
+                      ]
+                   }
+                ]
+             }
+          }
+       ]
+    },
+    {
+       "Class": "ShapeRepresentation",
+       "GlobalId": "a296a747-eba3-4a96-b20c-ced6dbb0092d",
+       "RepresentationIdentifier": "Axis",
+       "RepresentationType": "Curve2D",
+       "Items": [
+          {
+             "Class": "Polyline",
+             "Points": [
+                {
+                   "Class": "CartesianPoint",
+                   "Coordinates": [
+                      0,
+                      0.15
+                   ]
+                },
+                {
+                   "Class": "CartesianPoint",
+                   "Coordinates": [
+                      5,
+                      0.15
+                   ]
+                }
+             ]
+          }
+       ]
+    },
+    {
+       "Class": "ShapeRepresentation",
+       "GlobalId": "70a00a01-12ba-44e9-b77e-b990fe550b2f",
+       "RepresentationIdentifier": "Body",
+       "RepresentationType": "SweptSolid",
+       "Items": [
+          {
+             "Class": "ExtrudedAreaSolid",
+             "SweptArea": {
+                "Class": "ArbitraryClosedProfileDef",
+                "ProfileType": ".AREA.",
+                "OuterCurve": {
+                   "Class": "Polyline",
+                   "Points": [
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0.3
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            5,
+                            0.3
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            5,
+                            0
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0
+                         ]
+                      }
+                   ]
+                }
+             },
+             "Position": {
+                "Class": "Axis2Placement3D",
+                "Location": {
+                   "Class": "CartesianPoint",
+                   "Coordinates": [
+                      0,
+                      0,
+                      0
+                   ]
+                },
+                "Axis": {
+                   "Class": "Direction",
+                   "Coordinates": [
+                      0,
+                      0,
+                      1
+                   ]
+                },
+                "RefDirection": {
+                   "Class": "Direction",
+                   "Coordinates": [
+                      1,
+                      0,
+                      0
+                   ]
+                }
+             },
+             "ExtrudedDirection": {
+                "Class": "Direction",
+                "Coordinates": [
+                   0,
+                   0,
+                   1
+                ]
+             },
+             "Depth": 2.3
+          }
+       ]
+    },
+    {
+       "Class": "ShapeRepresentation",
+       "GlobalId": "29820bc5-4ddb-4ce4-a65a-e9c936997256",
+       "RepresentationIdentifier": "Body",
+       "RepresentationType": "SweptSolid",
+       "Items": [
+          {
+             "Class": "ExtrudedAreaSolid",
+             "SweptArea": {
+                "Class": "ArbitraryClosedProfileDef",
+                "ProfileType": ".AREA.",
+                "OuterCurve": {
+                   "Class": "Polyline",
+                   "Points": [
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0.1
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0.75,
+                            0.1
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0.75,
+                            0
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0
+                         ]
+                      }
+                   ]
+                }
+             },
+             "Position": {
+                "Class": "Axis2Placement3D",
+                "Location": {
+                   "Class": "CartesianPoint",
+                   "Coordinates": [
+                      0,
+                      0,
+                      0
+                   ]
+                },
+                "Axis": {
+                   "Class": "Direction",
+                   "Coordinates": [
+                      0,
+                      0,
+                      1
+                   ]
+                },
+                "RefDirection": {
+                   "Class": "Direction",
+                   "Coordinates": [
+                      1,
+                      0,
+                      0
+                   ]
+                }
+             },
+             "ExtrudedDirection": {
+                "Class": "Direction",
+                "Coordinates": [
+                   0,
+                   0,
+                   1
+                ]
+             },
+             "Depth": 2.1
+          }
+       ]
+    },
+    {
+       "Class": "ShapeRepresentation",
+       "GlobalId": "6b5db8ee-9ce5-442a-b50e-7be913f9a214",
+       "RepresentationIdentifier": "Body",
+       "RepresentationType": "SweptSolid",
+       "Items": [
+          {
+             "Class": "ExtrudedAreaSolid",
+             "SweptArea": {
+                "Class": "ArbitraryClosedProfileDef",
+                "ProfileType": ".AREA.",
+                "OuterCurve": {
+                   "Class": "Polyline",
+                   "Points": [
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0.3
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0.75,
+                            0.3
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0.75,
+                            0
+                         ]
+                      },
+                      {
+                         "Class": "CartesianPoint",
+                         "Coordinates": [
+                            0,
+                            0
+                         ]
+                      }
+                   ]
+                }
+             },
+             "Position": {
+                "Class": "Axis2Placement3D",
+                "Location": {
+                   "Class": "CartesianPoint",
+                   "Coordinates": [
+                      0,
+                      0,
+                      0
+                   ]
+                },
+                "Axis": {
+                   "Class": "Direction",
+                   "Coordinates": [
+                      0,
+                      0,
+                      1
+                   ]
+                },
+                "RefDirection": {
+                   "Class": "Direction",
+                   "Coordinates": [
+                      1,
+                      0,
+                      0
+                   ]
+                }
+             },
+             "ExtrudedDirection": {
+                "Class": "Direction",
+                "Coordinates": [
+                   0,
+                   0,
+                   1
+                ]
+             },
+             "Depth": 2.1
+          }
+       ]
+    }
+ ]

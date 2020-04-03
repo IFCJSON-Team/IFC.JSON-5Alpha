@@ -1,0 +1,95 @@
+[
+    {
+      "Class": "Project",
+      "GlobalId": "cb78a8c2-fb1e-4e12-8f29-6c0d7c39ca0b",
+      "Name": "Default Project",
+      "Description": "Description of Default Project",
+      "isDecomposedBy": [
+        {
+          "Class": "Site",
+          "GlobalId": "f07e69ce-3709-4ef5-a029-e27de7e95991",
+          "Name": "'TU/e campus'",
+          "Description": "'The High Tech campus of the Eindhoven University of Technology'",
+          "CompositionType": ".ELEMENT.",
+          "RefElevation": 0,
+          "isDecomposedBy": [
+            {
+              "Class": "Building",
+              "GlobalId": "f3b41796-63ea-4a63-b0aa-f1d7978a6e47",
+              "Name": "'Vertigo Building'",
+              "Description": "'TU/e Department of the Built Environment'",
+              "CompositionType": ".ELEMENT.",
+              "ElevationOfRefHeight": 0,
+              "ElevationOfTerrain": 0,
+              "isDecomposedBy": [
+                {
+                  "Class": "BuildingStorey",
+                  "GlobalId": "f3b837ed-c73a-422c-80f1-621164f4d99f",
+                  "Name": "'Default Building Storey'",
+                  "Description": "'Description of Default Building Storey'",
+                  "CompositionType": ".ELEMENT.",
+                  "Elevation": 0,
+                  "ContainsElements": [
+                    {
+                      "Class": "Door",
+                      "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
+                      "Name": "'A common door'",
+                      "Description": "'Description of a standard door'",
+                      "OverallHeight": 0,
+                      "OverallWidth": 0
+                    },
+                    {
+                      "Class": "WallStandardCase",
+                      "GlobalId": "f3b7a52f-4eb5-44a8-80e0-87592507aed9",
+                      "Name": "'Wall xyz'",
+                      "Description": "'Description of Wall'",
+                      "Reference": "",
+                      "AcousticRating": "",
+                      "FireRating": "",
+                      "Combustible": false,
+                      "SurfaceSpreadOfFlame": "",
+                      "ThermalTransmittance": 0.24,
+                      "IsExternal": true,
+                      "ExtendToStructure": false,
+                      "LoadBearing": false,
+                      "Compartmentation": false
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Class": "RelAssociatesMaterial",
+      "GlobalId": "8f8242e2-1cd6-4b87-87e3-d56330aa16ea",
+      "RelatedObjects": [
+        {
+          "Class": "WallStandardCase",
+          "ref": "f3b7a52f-4eb5-44a8-80e0-87592507aed9"
+        }
+      ],
+      "RelatingMaterial": {
+        "Class": "MaterialLayerSetUsage",
+        "ForLayerSet": {
+          "Class": "MaterialLayerSet",
+          "MaterialLayers": [
+            {
+              "Class": "MaterialLayer",
+              "Material": {
+                "Class": "Material",
+                "Name": "simple brick material"
+              },
+              "LayerThickness": 0.3
+            }
+          ],
+          "LayerSetName": "The simple brick material layer set"
+        },
+        "LayerSetDirection": ".AXIS2.",
+        "DirectionSense": ".POSITIVE.",
+        "OffsetFromReferenceLine": -0.15
+      }
+    }
+  ]

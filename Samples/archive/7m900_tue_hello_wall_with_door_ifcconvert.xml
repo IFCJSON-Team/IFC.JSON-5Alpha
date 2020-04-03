@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifc xmlns:xlink="http://www.w3.org/1999/xlink">
+	<header>
+		<file_description>
+			<description>ViewDefinition [CoordinationView,   QuantityTakeOffAddOnView]</description>
+			<implementation_level>2;1</implementation_level>
+		</file_description>
+		<file_name>
+			<author>Architect</author>
+			<organization>Building Designer Office</organization>
+			<name>7m900_tue_hello_wall_with_door.ifc</name>
+			<time_stamp>2015-12-01T21:53:56</time_stamp>
+			<preprocessor_version>Your favorite text editor</preprocessor_version>
+			<originating_system>your text editor version x.x</originating_system>
+			<authorization>The authorising person</authorization>
+		</file_name>
+		<file_schema>
+			<schema_identifiers>IFC2X3</schema_identifiers>
+		</file_schema>
+	</header>
+	<units>
+		<IfcSIUnit UnitType="LENGTHUNIT" Name="METRE" SI_equivalent="1"/>
+		<IfcSIUnit UnitType="AREAUNIT" Name="SQUARE_METRE" SI_equivalent="1"/>
+		<IfcSIUnit UnitType="VOLUMEUNIT" Name="CUBIC_METRE" SI_equivalent="1"/>
+		<IfcConversionBasedUnit UnitType="PLANEANGLEUNIT" Name="DEGREE" SI_equivalent="0.01745"/>
+		<IfcSIUnit UnitType="SOLIDANGLEUNIT" Name="STERADIAN" SI_equivalent="1"/>
+		<IfcSIUnit UnitType="MASSUNIT" Name="GRAM" SI_equivalent="1"/>
+		<IfcSIUnit UnitType="TIMEUNIT" Name="SECOND" SI_equivalent="1"/>
+		<IfcSIUnit UnitType="THERMODYNAMICTEMPERATUREUNIT" Name="DEGREE_CELSIUS" SI_equivalent="1"/>
+		<IfcSIUnit UnitType="LUMINOUSINTENSITYUNIT" Name="LUMEN" SI_equivalent="1"/>
+	</units>
+	<properties>
+		<IfcPropertySet id="18RtPv6efDwuUOMduCZ7rH" Name="Pset_WallCommon">
+			<IfcPropertySingleValue Name="Reference" Description="Reference" NominalValue=""/>
+			<IfcPropertySingleValue Name="AcousticRating" Description="AcousticRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="FireRating" Description="FireRating" NominalValue=""/>
+			<IfcPropertySingleValue Name="Combustible" Description="Combustible" NominalValue="false"/>
+			<IfcPropertySingleValue Name="SurfaceSpreadOfFlame" Description="SurfaceSpreadOfFlame" NominalValue=""/>
+			<IfcPropertySingleValue Name="ThermalTransmittance" Description="ThermalTransmittance" NominalValue="0.24"/>
+			<IfcPropertySingleValue Name="IsExternal" Description="IsExternal" NominalValue="true"/>
+			<IfcPropertySingleValue Name="ExtendToStructure" Description="ExtendToStructure" NominalValue="false"/>
+			<IfcPropertySingleValue Name="LoadBearing" Description="LoadBearing" NominalValue="false"/>
+			<IfcPropertySingleValue Name="Compartmentation" Description="Compartmentation" NominalValue="false"/>
+		</IfcPropertySet>
+	</properties>
+	<quantities/>
+	<types/>
+	<layers/>
+	<materials>
+		<IfcMaterialLayerSetUsage id="IfcMaterialLayerSetUsage_75" LayerSetDirection="AXIS2" DirectionSense="POSITIVE" OffsetFromReferenceLine="-0.15">
+			<IfcMaterialLayer Name="simple brick material" LayerThickness="0.3"/>
+		</IfcMaterialLayerSetUsage>
+	</materials>
+	<decomposition>
+		<IfcProject id="0YvctVUKr0kugbFTf53O9L" Name="Default Project" Description="Description of Default Project">
+			<IfcSite id="3rNg_N55v4CRBpQVbZJoHB" Name="TU/e campus" Description="The High Tech campus of the Eindhoven University of Technology" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" CompositionType="ELEMENT" RefLatitude="24.466667" RefLongitude="54.416667">
+				<IfcBuilding id="0yf_M5JZv9QQXly4dq_zvI" Name="Vertigo Building" Description="TU/e Department of the Built Environment" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" CompositionType="ELEMENT">
+					<IfcBuildingStorey id="0C87kaqBXF$xpGmTZ7zxN$" Name="Default Building Storey" Description="Description of Default Building Storey" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1" CompositionType="ELEMENT" Elevation="0">
+						<IfcWallStandardCase id="3vB2YO$MX4xv5uCqZZG05x" Name="Wall xyz" Description="Description of Wall" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1">
+							<IfcOpeningElement id="2LcE70iQb51PEZynawyvuT" Name="Opening Element xyz" Description="Description of Opening" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0.5 0 0 1"/>
+							<IfcPropertySet xlink:href="#18RtPv6efDwuUOMduCZ7rH"/>
+							<IfcMaterialLayerSetUsage xlink:href="#IfcMaterialLayerSetUsage_75"/>
+						</IfcWallStandardCase>
+						<IfcDoor id="0LV8Pid0X3IA3jJLVDPidY" Name="A common door" Description="Description of a standard door" ObjectPlacement="1 0 0 0 0 1 0 0 0 0 1 0 0.5 0.1 0 1" OverallHeight="1.4" OverallWidth="0.7"/>
+					</IfcBuildingStorey>
+				</IfcBuilding>
+			</IfcSite>
+		</IfcProject>
+	</decomposition>
+</ifc>
