@@ -117,53 +117,53 @@ JSON is typically exchanged headerless. So this is not included in the specifica
 ### 2.5 Elements
 IFCJSON can contain building elements. They are key elements of an IFCJSON file or snippet. IFCJSON Elements will nominally contain the following tags:
 
-Class
-Required
-DataType: String
-Description: The Class name refers to one of the standard IFC Classes.
+Class  
+Required  
+DataType: String  
+Description: The Class name refers to one of the standard IFC Classes.  
 
-GlobalID
-Required
-DataType: String
-Description: A Version 4 UUID is a universally unique identifier that is generated using random numbers. 
-Example: 028c968f-687d-484e-9c0a-5048a923b8c4
+GlobalID  
+Required  
+DataType: String  
+Description: A Version 4 UUID is a universally unique identifier that is generated using random numbers.  
+Example: 028c968f-687d-484e-9c0a-5048a923b8c4  
 
-Name
-Optional
-DataType: String
-Description: The name of the element
+Name  
+Optional  
+DataType: String  
+Description: The name of the element  
 
-Description 
-Optional
-DataType: String
-Description: The description of the element
+Description  
+Optional  
+DataType: String  
+Description: The description of the element  
 
-Tag
-Optional
-DataType: String
-Description: Tag that can be used for annotating the element
+Tag  
+Optional  
+DataType: String  
+Description: Tag that can be used for annotating the element  
 
-ObjectPlacement
-Optional
-DataType: A JSON Object 
-Description: The location of the object. 
+ObjectPlacement  
+Optional  
+DataType: A JSON Object  
+Description: The location of the object.  
 
-Representations 
-Optional
-DataType: A Collection of JSON Objects
-Description: 2D and/or 3D representations of the object.
+Representations  
+Optional  
+DataType: A Collection of JSON Objects  
+Description: 2D and/or 3D representations of the object.  
 
 Example:
 
 ~~~
 {
-    "Class": "Wall",
-    "GlobalId": "028c968f-687d-484e-9c0a-5048a923b8c4",            
-    "Name": "my Wall",
-    "Description": "Description of Wall",
-    "ObjectPlacement": {  },
-    "Representation": {  },
-    "Tag": "wall"
+  "Class": "Wall",
+  "GlobalId": "028c968f-687d-484e-9c0a-5048a923b8c4",            
+  "Name": "my Wall",
+  "Description": "Description of Wall",
+  "ObjectPlacement": {  },
+  "Representation": {  },
+  "Tag": "wall"
 }
 ~~~
 
@@ -212,41 +212,37 @@ Example:
 
 ~~~
 {
-	"Class" : "Project",
-	"GlobalId": "7e8368b59c66436aa047bebfe824ad81",
-	"Name": "0YvctVUKr0kugbFTf53O9L",
-	"Description": "",
-	"ObjectType": null,
-	"LongName": null,
-	"Phase": null,
-	"IsDecomposedBy" : [
-        {
-            "Class": "Site",
-            "GlobalId": "561d1aeeb13f4eca846883793a293b45",
-            "Name": "Default Site",
-            "Description": "Description of Default Site",
-            "ObjectType": null,            
-            "Representation": null,
-            "LongName": null,
-            "CompositionType": ".ELEMENT.",
-            "RefLatitude": null,
-            "RefLongitude": null,
-            "RefElevation": null,
-            "LandTitleNumber": null,
-            "SiteAddress": null,
-            "IsDecomposedBy": [
-                {   
-                    "Class": "Building",
-                    "IsDecomposedBy" : [
-                     { 
-                            "Class" : "Storey",
-                            "ContainsElements" : []
-                     }
-                    ]
-                }
-            ]
-        }
-    ]   
+  "Class" : "Project",
+  "GlobalId": "7e8368b59c66436aa047bebfe824ad81",
+  "Name": "0YvctVUKr0kugbFTf53O9L",
+  "Description": "",
+  "LongName": null,
+  "Phase": null,
+  "IsDecomposedBy" : [
+  {
+    "Class": "Site",
+    "GlobalId": "561d1aeeb13f4eca846883793a293b45",
+    "Name": "Default Site",
+    "Description": "Description of Default Site",
+    "ObjectType": null,            
+    "Representation": null,
+    "LongName": null,
+    "CompositionType": ".ELEMENT.",
+    "RefLatitude": null,
+    "RefLongitude": null,
+    "RefElevation": null,
+    "LandTitleNumber": null,
+    "SiteAddress": null,
+    "IsDecomposedBy": [
+    {   
+      "Class": "Building",
+      "IsDecomposedBy" : [
+      { 
+        "Class" : "Storey",
+        "ContainsElements" : []
+      }]
+    }]
+  }]  
 }
 ~~~
 
@@ -270,22 +266,22 @@ There are multiple ways to define the object type of an object in the IFC EXPRES
 This is valid:
 ~~~
 {
-	"Class": "Door",
-    "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
-    "Name": "A common door",
-    "Description": "Description of a standard door"
+  "Class": "Door",
+  "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
+  "Name": "A common door",
+  "Description": "Description of a standard door"
 }
 ~~~
 
 This is not valid:
 ~~~
 {
-	"Class": "Door",
-    "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
-    "Name": "A common door",
-    "Description": "Description of a standard door"
-	"ObjectType" : "Door",
-	"PredefinedType" : "LargeDoor"
+  "Class": "Door",
+  "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
+  "Name": "A common door",
+  "Description": "Description of a standard door"
+  "ObjectType" : "Door",
+  "PredefinedType" : "LargeDoor"
 }
 ~~~
 
@@ -302,53 +298,52 @@ Geometry may be treated in multiple ways. Compared to the EXPRESS schema, geomet
 Example:
 ~~~
 {
-	"Class": "Door",
-    "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
-    "Name": "'A common door'",
-    "Description": "'Description of a standard door'",
-    "Representations": [
+  "Class": "Door",
+  "GlobalId": "f3b96025-a1f3-42a8-b047-b6cc5b1880ff",
+  "Name": "'A common door'",
+  "Description": "'Description of a standard door'",
+  "Representations": [
+  {
+    "Class": "ShapeRepresentation",
+    "GlobalId": "dc12a77c-c560-45e3-af0f-e84f5afbe844",
+    "RepresentationIdentifier": "Body",
+    "RepresentationType": "Brep",
+    "Data": {
+      "Class": "FacetedBrep",
+      "Outer": {
+        "Class": "ClosedShell",
+        "CfsFaces": [
         {
-			"Class": "ShapeRepresentation",
-            "GlobalId": "dc12a77c-c560-45e3-af0f-e84f5afbe844",
-			"RepresentationIdentifier": "Body",
-			"RepresentationType": "Brep",
-			"Data": [
-				{
-					"Class": "FacetedBrep",
-					"Outer": {
-						"Class": "ClosedShell",
-						"CfsFaces": [
-							{
-								"Class": "Face",
-								"Bounds": [
-									{
-										"Class": "FaceOuterBound",
-										"Bound": {
-											"Class": "PolyLoop",
-											"Polygon": [
-												{
-													"Class": "CartesianPoint",
-													"Coordinates": [
-														500,
-														100,
-														2100
-													]
-												}, ...
-											]
-										)
-									}, ...
-								]
-							}, ...
-						]
-					)
-				}
-			]
-        },
-        {
-            "Class": "ShapeRepresentation",
-            "ref": "29820bc5-4ddb-4ce4-a65a-e9c936997256"
-        }
+          "Class": "Face",
+          "Bounds": [
+          {
+            "Class": "FaceOuterBound",
+            "Bound": {
+              "Class": "PolyLoop",
+              "Polygon": [
+              {
+                "Class": "CartesianPoint",
+                "Coordinates": [
+                  500,
+                  100,
+                  2100
+                ]
+              }, ...
+              ]
+            )
+          }, ...
+          ]
+        }, ...
+        ]
+      )
+    }
     ]
+  },
+  {
+    "Class": "ShapeRepresentation",
+    "ref": "29820bc5-4ddb-4ce4-a65a-e9c936997256"
+  }
+  ]
 }
 ~~~
 
@@ -359,11 +354,11 @@ Example:
 
 ~~~
 {
-	"Class": "Wall",  
-	"GlobalId": "561d1aeeb13f4eca846883793a293b45",
-	"Name": "MyWall",
-	"AccousticRating" : 5,
-	"FireRating" : 10
+  "Class": "Wall",  
+  "GlobalId": "561d1aeeb13f4eca846883793a293b45",
+  "Name": "MyWall",
+  "AccousticRating" : 5,
+  "FireRating" : 10
 }
 ~~~
 
@@ -377,59 +372,59 @@ ifcJSON schema defines a structure for what ifcJSON data is required to provide 
 Example ifcJSON data:
 ~~~
 {
-	"Class": "Wall",
-	"GlobalId": "028c968f-687d-484e-9c0a-5048a923b8c4",
-	"Name": "my wall",
-	"Description": "Description of the wall",
-	"ObjectPlacement": { },
-	"Representation": { },
-	"Tag": "267108"
+  "Class": "Wall",
+  "GlobalId": "028c968f-687d-484e-9c0a-5048a923b8c4",
+  "Name": "my wall",
+  "Description": "Description of the wall",
+  "ObjectPlacement": { },
+  "Representation": { },
+  "Tag": "267108"
 }
 ~~~
 
 Corresponding ifcJSON Schema snippet (validated with above snippet using https://www.jsonschemavalidator.net/):
 ~~~
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "http://example.com/product.schema.json",
-	"title": "Wall",
-	"description": "IFC.JSON for Wall",
-	"type": "object",
-	"properties": {
-		"Class": {
-			"type": "string"
-		},
-		"GlobalId": {
-			"type": "string",
-			"maxLength": 36
-		},  
-		"Name": {
-			"type": "string",
-			"maxLength": 255
-		},
-		"Description": {
-			"type": "string"
-		},
-		"ObjectPlacement": {
-			"type": "object"
-		},
-		"Representations": { 
-			"type": "object",
-			"oneOf": [
-				{
-					"type": "string"
-				},
-				{ 
-					"type": "object",
-					"allOf": [{ "$ref": "#/properties/ShapeRepresentation" }]
-				}
-			]
-		},
-		"Tag": {
-			"type": "string",
-			"maxLength": 255
-		}
-	}
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/product.schema.json",
+  "title": "Wall",
+  "description": "IFC.JSON for Wall",
+  "type": "object",
+  "properties": {
+    "Class": {
+      "type": "string"
+    },
+    "GlobalId": {
+      "type": "string",
+      "maxLength": 36
+    },  
+    "Name": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "Description": {
+      "type": "string"
+    },
+    "ObjectPlacement": {
+      "type": "object"
+    },
+    "Representations": { 
+      "type": "object",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        { 
+          "type": "object",
+          "allOf": [{ "$ref": "#/properties/ShapeRepresentation" }]
+        }
+      ]
+    },
+    "Tag": {
+      "type": "string",
+      "maxLength": 255
+    }
+  }
 }
 ~~~
 
