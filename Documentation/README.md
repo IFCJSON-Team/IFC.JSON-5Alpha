@@ -201,9 +201,6 @@ Example:
   "type" : "IfcProject",
   "globalId": "7e8368b59c66436aa047bebfe824ad81",
   "name": "0YvctVUKr0kugbFTf53O9L",
-  "description": "",
-  "longName": null,
-  "phase": null,
   "isDecomposedBy" : [
   {
     "type": "IfcSite",
