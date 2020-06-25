@@ -12,7 +12,7 @@
       "representations": [
         {
           "type": "shapeRepresentation",
-          "ref": "971b3372-9520-47fe-9f3d-b736bb35f482"
+          "ref": "a39492c4-0b07-440c-9111-b640622b9510"
         }
       ]
     },
@@ -183,7 +183,7 @@
     },
     {
       "type": "shapeRepresentation",
-      "globalId": "971b3372-9520-47fe-9f3d-b736bb35f482",
+      "globalId": "a39492c4-0b07-440c-9111-b640622b9510",
       "representationIdentifier": "Body",
       "representationType": "OBJ",
       "items": [
